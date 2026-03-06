@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 // ISO A3 codes for African countries (based on geojson list + manual filtering)
 const AFRICA_ISO = new Set([
@@ -16,15 +16,15 @@ interface MarketMapSectionProps {
 
 export default function MarketMapSection({ highlight = [] }: MarketMapSectionProps) {
   const [svgContent, setSvgContent] = useState<string>('');
+  const mapRef = useRef<HTMLDivElement | null>(null);
 
+  // fetch & colour SVG (no listeners yet)
   useEffect(() => {
     fetch('/world.svg')
       .then((res) => res.text())
       .then((raw) => {
-        // parse and color the svg
         const parser = new DOMParser();
         const doc = parser.parseFromString(raw, 'image/svg+xml');
-        // make responsive
         const svgEl = doc.documentElement;
         svgEl.setAttribute('width', '100%');
         svgEl.removeAttribute('height');
@@ -34,63 +34,122 @@ export default function MarketMapSection({ highlight = [] }: MarketMapSectionPro
         paths.forEach((path) => {
           const id = path.getAttribute('id');
           if (!id) return;
+
           if (AFRICA_ISO.has(id)) {
-            path.setAttribute('fill', '#D4AF37'); // gold for Africa
+            path.setAttribute('fill', 'rgb(212 175 55)');
           } else if (highlight.includes(id)) {
-            path.setAttribute('fill', '#0052cc'); // blue for other highlights
+            path.setAttribute('fill', 'rgb(27 45 107)');
           } else {
             path.setAttribute('fill', '#ccc');
           }
-          // make sure stroke is subtle
           path.setAttribute('stroke', '#999');
+          path.setAttribute('style', 'cursor:pointer;');
         });
         setSvgContent(doc.documentElement.outerHTML);
       });
   }, [highlight]);
 
+  // attach interactivity after svgContent rendered
+  useEffect(() => {
+    if (!mapRef.current) return;
+    const container = mapRef.current;
+
+    // place marker for source India
+    const svgEl = container.querySelector('svg');
+    if (svgEl) {
+      const india = svgEl.querySelector('path#IND');
+      if (india) {
+        try {
+          const bbox = (india as SVGPathElement).getBBox();
+          const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+          circle.setAttribute('cx', (bbox.x + bbox.width/3).toString());
+          circle.setAttribute('cy', (bbox.y + bbox.height/2).toString());
+          circle.setAttribute('r', '5');
+          circle.setAttribute('fill', '#FFD700');
+          circle.setAttribute('stroke', '#000');
+          circle.setAttribute('stroke-width', '0.5');
+          svgEl.appendChild(circle);
+        } catch {
+          // getBBox may fail if SVG not rendered; ignore
+        }
+      }
+    }
+
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as SVGPathElement;
+      if (target && target.tagName === 'path') {
+        target.setAttribute('opacity', '0.7');
+      }
+    };
+    const handleMouseOut = (e: MouseEvent) => {
+      const target = e.target as SVGPathElement;
+      if (target && target.tagName === 'path') {
+        target.setAttribute('opacity', '1');
+      }
+    };
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as SVGPathElement;
+      if (target && target.tagName === 'path') {
+        const id = target.getAttribute('id');
+        if (id) alert(`Region clicked: ${id}`);
+      }
+    };
+
+    container.addEventListener('mouseover', handleMouseOver);
+    container.addEventListener('mouseout', handleMouseOut);
+    container.addEventListener('click', handleClick);
+
+    return () => {
+      container.removeEventListener('mouseover', handleMouseOver);
+      container.removeEventListener('mouseout', handleMouseOut);
+      container.removeEventListener('click', handleClick);
+    };
+  }, [svgContent]);
+
   return (
-    <section className="py-24 px-4 bg-[#0A0F1B] text-white">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-center lg:space-x-12">
+    <section className="py-24 px-4 md:px-20 bg-[#0B1120] text-white">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center lg:space-x-16">
         {/* text panel */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-2/5">
           <p className="text-sm font-semibold uppercase text-yellow-500 mb-2">
             Global Reach
           </p>
           <h2 className="text-4xl font-bold mb-6">
             Target Export Markets
           </h2>
-          <p className="text-lg leading-relaxed">
+          <p className="text-white/60 text-sm font-body leading-relaxed mb-8">
             Our active export corridors span four strategic regions, supported by
             established trade relationships and logistics networks.
           </p>
           <ul className="mt-8 space-y-6">
-            <li>
+            <li className='border-l-2 pl-2.5 border-secondary'>
               <h3 className="font-semibold">Taiwan</h3>
-              <p className="text-sm text-gray-300">
+              <p className="text-white/50 text-xs font-body">
                 Technology &amp; precision markets
               </p>
             </li>
-            <li>
+            <li className='border-l-2 pl-2.5 border-secondary'>
               <h3 className="font-semibold">Central Asia</h3>
-              <p className="text-sm text-gray-300">
+              <p className="text-white/50 text-xs font-body">
                 Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan
               </p>
             </li>
-            <li>
+            <li className='border-l-2 pl-2.5 border-secondary'>
               <h3 className="font-semibold">Africa</h3>
-              <p className="text-sm text-gray-300">54‑nation high‑growth market</p>
+              <p className="text-white/50 text-xs font-body">54‑nation high‑growth market</p>
             </li>
-            <li>
+            <li className='border-l-2 pl-2.5 border-secondary'>
               <h3 className="font-semibold">Middle East</h3>
-              <p className="text-sm text-gray-300">GCC &amp; wider MENA region</p>
+              <p className="text-white/50 text-xs font-body">GCC &amp; wider MENA region</p>
             </li>
           </ul>
         </div>
 
         {/* map panel */}
-        <div className="mt-12 lg:mt-0 lg:w-1/2">
+        <div className="mt-12 lg:mt-0 lg:w-4/5">
           {svgContent ? (
             <div
+              ref={mapRef}
               className="w-full h-auto"
               dangerouslySetInnerHTML={{ __html: svgContent }}
             />
@@ -102,16 +161,16 @@ export default function MarketMapSection({ highlight = [] }: MarketMapSectionPro
 
       {/* legend */}
       <div className="mt-12 flex justify-center space-x-12 text-sm">
-        <div className="flex items-center">
-          <span className="w-3 h-3" style={{backgroundColor: '#0052cc'}}></span>
+        <div className="flex items-center text-gray-400">
+          <span className="w-4 h-4 rounded" style={{backgroundColor: 'rgb(27 45 107)'}}></span>
           <span className="ml-2">India (Source)</span>
         </div>
-        <div className="flex items-center">
-          <span className="w-3 h-3" style={{backgroundColor: '#D4AF37'}}></span>
+        <div className="flex items-center text-gray-400">
+          <span className="w-4 h-4 rounded" style={{backgroundColor: 'rgb(212 175 55)'}}></span>
           <span className="ml-2">Target Export Markets</span>
         </div>
-        <div className="flex items-center">
-          <span className="w-3 h-3 bg-gray-400 mr-2 inline-block"></span>
+        <div className="flex items-center text-gray-400">
+          <span className="w-4 h-4 rounded bg-gray-400 mr-2 inline-block"></span>
           Other Regions
         </div>
       </div>

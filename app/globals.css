@@ -37,3 +37,7 @@ body {
 .font-heading, h1, h2, h3, h4 {
   font-family: Playfair Display,serif;
 }
+
+.font-semibold {
+    font-weight: 600;
+}

@@ -5,6 +5,8 @@ import ExportSection from '@/components/ExportSection';
 import ProcessSection from '@/components/ProcessSection';
 import IndiaAdvantageSection from '@/components/IndiaAdvantageSection';
 import MarketMapSection from '@/components/MarketMapSection';
+import PaymentTermsSection from '@/components/PaymentTermsSection';
+import RFQSection from '@/components/RFQSection';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <ProcessSection />
       <IndiaAdvantageSection />
       <MarketMapSection highlight={["IND"]} />
+      <PaymentTermsSection />
+      <RFQSection />
     </main>
   );
 }

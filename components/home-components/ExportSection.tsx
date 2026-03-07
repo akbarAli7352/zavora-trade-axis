@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../SectionTitle';
 import Image from 'next/image';
 
 interface ExportItem {

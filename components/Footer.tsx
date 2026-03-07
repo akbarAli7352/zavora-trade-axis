@@ -1,3 +1,4 @@
+import { URLS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,7 +41,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.CONTACT} className="text-white/60 hover:text-secondary">
                   About Us
                 </Link>
               </li>
@@ -55,7 +56,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.CONTACT} className="text-white/60 hover:text-secondary">
                   Contact
                 </Link>
               </li>

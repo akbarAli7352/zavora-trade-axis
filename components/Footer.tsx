@@ -1,3 +1,4 @@
+import { PRODUCT_CATEGORIES, URLS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,7 +41,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.CONTACT} className="text-white/60 hover:text-secondary">
                   About Us
                 </Link>
               </li>
@@ -55,7 +56,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.CONTACT} className="text-white/60 hover:text-secondary">
                   Contact
                 </Link>
               </li>
@@ -68,45 +69,14 @@ export function Footer() {
               Our Products
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>
+              {PRODUCT_CATEGORIES.map((category) => (<li key={category.name}>
                 <Link
-                  href="/products/leather-products"
+                  href={category.href}
                   className="text-white/60 hover:text-secondary"
                 >
-                  Leather Products
+                  {category.name}
                 </Link>
-              </li>
-              <li>
-                <Link href="/products/handicrafts" className="text-white/60 hover:text-secondary">
-                  Handicrafts
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/carpets" className="text-white/60 hover:text-secondary">
-                  Carpets
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/pure-honey" className="text-white/60 hover:text-secondary">
-                  Pure Honey
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/specialty-coffee"
-                  className="text-white/60 hover:text-secondary"
-                >
-                  Specialty Coffee
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/custom-sourcing"
-                  className="text-white/60 hover:text-secondary"
-                >
-                  Custom Sourcing
-                </Link>
-              </li>
+              </li>))}
             </ul>
           </div>
 

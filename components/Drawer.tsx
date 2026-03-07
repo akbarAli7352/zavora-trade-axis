@@ -51,8 +51,7 @@ export function Drawer({ onClose }: DrawerProps) {
 
         <nav className="flex-1 space-y-4">
           {links.map((link) => {
-            const isActive = pathname === link.href;
-            console.log(`Drawer link: ${link.href}, active: ${isActive}`);
+            const isActive = pathname === link.href || (pathname.includes(link.href) && link.href !== "/");
             return (
               <Link
                 key={link.href}

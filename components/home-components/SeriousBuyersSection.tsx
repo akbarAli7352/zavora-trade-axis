@@ -1,7 +1,7 @@
 'use client';
 
 import { JSX } from 'react';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../SectionTitle';
 
 interface Feature {
   icon: JSX.Element;

@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { NavBar } from "./NavBar";
 import { Drawer } from "./Drawer";
-import { links } from "@/constants";
 
 export function Header() {
     const [drawerOpen, setDrawerOpen] = useState(false);
 
     return (
-        <header className="flex items-center justify-between bg-primary text-foreground p-2 sm:pl-10 sm:pr-10 sm:p-4">
+        <header className="z-50 sticky top-0 flex items-center justify-between bg-primary text-foreground p-2 sm:pl-10 sm:pr-10 sm:p-4">
             <Link href={'/'} className="flex">
                 <Image
                     src="/logo.png"

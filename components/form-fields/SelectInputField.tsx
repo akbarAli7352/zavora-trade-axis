@@ -10,6 +10,7 @@ interface SelectInputFieldProps {
   placeholder: string;
   required?: boolean;
   options: SelectOption[];
+  error?: string;
 }
 
 export default function SelectInputField({
@@ -19,6 +20,7 @@ export default function SelectInputField({
   placeholder,
   required = false,
   options,
+  error,
 }: SelectInputFieldProps) {
   return (
     <div>
@@ -33,7 +35,10 @@ export default function SelectInputField({
         name={name}
         required={required}
         defaultValue=""
-        className="w-full h-11 border border-slate-300 bg-white px-3 text-sm text-primary outline-none focus:border-primary"
+        aria-invalid={Boolean(error)}
+        className={`w-full h-11 border bg-white px-3 text-sm text-primary outline-none focus:border-primary ${
+          error ? 'border-red-500' : 'border-slate-300'
+        }`}
       >
         <option value="" disabled>
           {placeholder}
@@ -44,6 +49,7 @@ export default function SelectInputField({
           </option>
         ))}
       </select>
+      {error ? <p className="mt-1 text-xs text-red-600">{error}</p> : null}
     </div>
   );
 }

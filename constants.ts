@@ -8,11 +8,11 @@ export const URLS ={
 }
 
 export const PRODUCT_CATEGORIES = [
-    { name: "Leather Products", href: "/products/leather-products" },
-    { name: "Handicrafts", href: "/products/handicrafts" },
-    { name: "Carpets", href: "/products/carpets" },
-    { name: "Pure Honey", href: "/products/pure-honey" },
-    { name: "Specialty Coffee", href: "/products/specialty-coffee" },
+    { name: "Leather Products", value: 'leather-products', href: "/products/leather-products" },
+    { name: "Handicrafts", value: 'handicrafts', href: "/products/handicrafts" },
+    { name: "Carpets", value: 'carpets', href: "/products/carpets" },
+    { name: "Pure Honey", value: 'pure-honey', href: "/products/pure-honey" },
+    { name: "Specialty Coffee", value: 'specialty-coffee', href: "/products/specialty-coffee" },
 ]
 
 export const links = [
@@ -22,4 +22,9 @@ export const links = [
     { href: URLS.EXPORT_PROCESS, label: "Export Process" },
     { href: URLS.CERTIFICATIONS, label: "Certifications" },
     { href: URLS.CONTACT, label: "Contact" },
-  ];
+];
+
+export const PAYMENT_MODES = [
+  { value: 'lc', label: 'Letter of Credit (LC)' },
+  { value: 'advance', label: 'Advance Payment' },
+]

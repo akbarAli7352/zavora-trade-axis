@@ -114,7 +114,7 @@ export default function ContactDetailsAndRFQSection() {
           </div>
 
           <Link
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919155937077"
             className="mt-8 inline-flex h-11 w-full items-center justify-center gap-2 bg-[#25D366] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#1eb859]"
           >
             <svg
@@ -131,16 +131,14 @@ export default function ContactDetailsAndRFQSection() {
             Chat on WhatsApp
           </Link>
 
-          <div className="mt-6 border border-slate-300 bg-white p-5">
-            <h3 className="font-heading text-2xl font-bold text-primary">
+          <div className="bg-[#F8FAFC] border border-slate-200 p-5 mt-8">
+            <h3 className="font-heading font-bold text-sm text-[#0F172A] mb-3">
               Confidentiality Assured
             </h3>
             <ul className="mt-3 space-y-2">
               {confidentialityPoints.map((point) => (
-                <li key={point} className="flex items-start gap-2 text-sm text-slate-600">
-                  <span className="mt-0.5 text-secondary" aria-hidden="true">
-                    ○
-                  </span>
+                <li key={point} className="flex items-center gap-2 text-xs text-slate-500 font-body">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-[#D4AF37] shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
                   <span>{point}</span>
                 </li>
               ))}

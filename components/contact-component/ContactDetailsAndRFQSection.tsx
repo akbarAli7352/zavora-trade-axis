@@ -114,7 +114,7 @@ export default function ContactDetailsAndRFQSection() {
           </div>
 
           <Link
-            href="https://wa.me/919155937077"
+            href="https://wa.me/9876543210"
             className="mt-8 inline-flex h-11 w-full items-center justify-center gap-2 bg-[#25D366] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#1eb859]"
           >
             <svg
@@ -132,7 +132,7 @@ export default function ContactDetailsAndRFQSection() {
           </Link>
 
           <div className="bg-[#F8FAFC] border border-slate-200 p-5 mt-8">
-            <h3 className="font-heading font-bold text-sm text-[#0F172A] mb-3">
+            <h3 className="font-heading font-bold text-sm text-primary mb-3">
               Confidentiality Assured
             </h3>
             <ul className="mt-3 space-y-2">

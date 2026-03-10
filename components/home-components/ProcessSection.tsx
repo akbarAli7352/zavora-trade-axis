@@ -1,3 +1,4 @@
+import { URLS } from '@/constants';
 import Link from 'next/link';
 
 interface Step {
@@ -80,7 +81,7 @@ export default function ProcessSection() {
 
       <div className="mt-12 text-center">
         <Link
-          href="#"
+          href={URLS.EXPORT_PROCESS}
           className="inline-flex items-center text-primary font-semibold text-sm hover:text-secondary transition-colors"
         >
           View Detailed Export Process

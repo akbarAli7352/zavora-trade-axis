@@ -43,23 +43,8 @@ const compliancePoints = [
 function Bullet({ text, secondary = false }: { text: string; secondary?: boolean }) {
   return (
     <li className="flex items-start gap-2 text-sm leading-relaxed text-slate-600">
-      <span
-        className={`mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border ${
-          secondary ? "border-secondary text-secondary" : "border-primary text-primary"
-        }`}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.3"
-          className="h-2.5 w-2.5"
-          aria-hidden="true"
-        >
-          <path d="m5 12 5 5L20 7" />
-        </svg>
-      </span>
+      {secondary ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-secondary mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>:
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-primary mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>}
       <span>{text}</span>
     </li>
   );
@@ -86,7 +71,7 @@ export default function HowWeOperateSection() {
                 className="border border-slate-300 bg-white px-6 py-7 hover:border-secondary"
               >
                 <div className="text-primary">{card.icon}</div>
-                <h3 className="font-heading font-bold text-base text-[#0F172A] mb-3 mt-4">
+                <h3 className="font-heading font-bold text-base text-primary mb-3 mt-4">
                   {card.title}
                 </h3>
                 <p className="text-sm text-slate-500 font-body leading-relaxed">

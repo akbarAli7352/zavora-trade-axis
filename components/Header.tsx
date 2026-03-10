@@ -11,7 +11,7 @@ export function Header() {
 
     return (
         <header className="z-50 sticky top-0 flex items-center justify-between bg-primary text-foreground p-2 sm:pl-10 sm:pr-10 sm:p-4">
-            <Link href={'/'} className="flex">
+            <Link href={URLS.HOME} className="flex">
                 <Image
                     src="/logo.png"
                     alt="Zavora Trade Axis Logo"

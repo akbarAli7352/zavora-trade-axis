@@ -104,36 +104,22 @@ export default function ProcessTimelineSection() {
                   </span>
                   {step.title}
                 </h2>
-                <p className="mt-3 max-w-4xl text-sm leading-relaxed text-slate-600">
+                <p className="text-slate-600 font-body text-sm leading-relaxed mb-5 mt-3">
                   {step.description}
                 </p>
 
                 <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2">
                   <div>
-                    <p className="font-accent text-xs font-semibold tracking-[0.14em] uppercase text-primary">
+                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary mb-3">
                       Activities
                     </p>
                     <ul className="mt-2 space-y-1.5">
                       {step.activities.map((activity) => (
                         <li
                           key={activity}
-                          className="flex items-start gap-2 text-sm text-slate-600"
+                          className="flex items-start gap-2 text-xs text-slate-500 font-body"
                         >
-                          <span
-                            className="mt-1 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-secondary text-secondary"
-                            aria-hidden="true"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              className="h-2.5 w-2.5"
-                            >
-                              <path d="m5 13 4 4L19 7" />
-                            </svg>
-                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-[#D4AF37] mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
                           <span>{activity}</span>
                         </li>
                       ))}
@@ -141,7 +127,7 @@ export default function ProcessTimelineSection() {
                   </div>
 
                   <div>
-                    <p className="font-accent text-xs font-semibold tracking-[0.14em] uppercase text-primary">
+                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary mb-3">
                       Documents Involved
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">

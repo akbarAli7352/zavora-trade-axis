@@ -5,6 +5,9 @@ export const URLS ={
     EXPORT_PROCESS: "/export-process",
     CERTIFICATIONS: "/certifications",
     CONTACT: "/contact",
+    PRIVACY_POLICY: "/privacy-policy",
+    TERMS_OF_TRADE: "/terms-of-trade",
+
 }
 
 export const PRODUCT_CATEGORIES = [

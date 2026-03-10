@@ -1,3 +1,4 @@
+import { URLS } from "@/constants";
 import Link from "next/link";
 
 const sourcingItems = [
@@ -47,7 +48,7 @@ export default function CustomSourcingSection() {
           </ul>
 
           <Link
-            href="/contact"
+            href={URLS.CONTACT}
             className="mt-8 inline-flex items-center gap-2 bg-secondary px-6 py-4 text-sm font-semibold text-primary transition-colors hover:bg-secondary-hover"
           >
             Submit Custom Requirements

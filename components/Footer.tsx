@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* about section */}
           <div>
-            <Link href="/" className="flex items-center mb-4">
+            <Link href={URLS.HOME} className="flex items-center mb-4">
               <Image
                 src="/logo.png"
                 width={48}
@@ -46,12 +46,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/export-process" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.EXPORT_PROCESS} className="text-white/60 hover:text-secondary">
                   Export Process
                 </Link>
               </li>
               <li>
-                <Link href="/certifications" className="text-white/60 hover:text-secondary">
+                <Link href={URLS.CERTIFICATIONS} className="text-white/60 hover:text-secondary">
                   Certifications
                 </Link>
               </li>
@@ -118,14 +118,14 @@ export function Footer() {
             © 2026 Zavora TradeAxis. All rights reserved. Registered Merchant
             Exporter, India.
           </span>
-          <Link href="/privacy-policy" className="hover:text-secondary">
+          <Link href={URLS.PRIVACY_POLICY} className="hover:text-secondary">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-trade" className="hover:text-secondary">
+          <Link href={URLS.TERMS_OF_TRADE} className="hover:text-secondary">
             Terms of Trade
           </Link>
           <Link
-            href="/anti-corruption-statement"
+            href={URLS.CONTACT}
             className="hover:text-secondary"
           >
             Anti‑Corruption Statement

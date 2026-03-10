@@ -49,7 +49,7 @@ export default function LeadershipSection() {
           <p className="font-accent font-semibold text-xs tracking-widest uppercase text-secondary">
             Our Team
           </p>
-          <h2 className="font-heading text-4xl font-bold text-[#0F172A] mt-2">
+          <h2 className="font-heading text-4xl font-bold text-primary mt-2">
             The People Behind Zavora
           </h2>
         </div>
@@ -64,7 +64,7 @@ export default function LeadershipSection() {
                 {member.initials}
               </div>
 
-              <h3 className="font-heading font-bold text-base text-[#0F172A] mb-1">
+              <h3 className="font-heading font-bold text-base text-primary mb-1">
                 {member.name || member.role}
               </h3>
               <p className="text-xs font-accent font-semibold tracking-wide text-secondary uppercase mb-3">

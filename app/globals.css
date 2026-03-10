@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-txt: #0F172A;
   --primary: rgb(27 45 107);
   --primary-hover: rgb(27 45 107 / 0.8);
   --secondary: rgb(212 175 55);
@@ -14,6 +15,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-txt: var(--primary-txt);
   --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
   --color-secondary-hover: var(--secondary-hover);

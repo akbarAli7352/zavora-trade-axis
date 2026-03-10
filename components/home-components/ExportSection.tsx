@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import SectionTitle from '../SectionTitle';
 import Image from 'next/image';
+import { PRODUCT_CATEGORIES, URLS } from '@/constants';
 
 interface ExportItem {
   title: string;
@@ -21,7 +22,7 @@ const items: ExportItem[] = [
     description: 'Premium genuine leather goods from India’s established tannery hub.',
     image: '/assets/leather.jpg',
     linkText: 'View Specifications',
-    linkHref: '#',
+    linkHref: PRODUCT_CATEGORIES[0].href,
   },
   {
     title: 'Handicrafts',
@@ -29,7 +30,7 @@ const items: ExportItem[] = [
     description: 'Authentic handcrafted items from master artisans across India.',
     image: '/assets/handicrafts.jpg',
     linkText: 'View Specifications',
-    linkHref: '#',
+    linkHref: PRODUCT_CATEGORIES[1].href,
   },
   {
     title: 'Carpets',
@@ -37,7 +38,7 @@ const items: ExportItem[] = [
     description: 'Hand-knotted and machine-made carpets from certified weaving centers.',
     image: '/assets/carpet.jpg',
     linkText: 'View Specifications',
-    linkHref: '#',
+    linkHref: PRODUCT_CATEGORIES[2].href,
   },
   {
     title: 'Pure Honey',
@@ -45,7 +46,7 @@ const items: ExportItem[] = [
     description: 'Certified natural honey sourced from verified apiaries with FSSAI approval.',
     image: '/assets/honey.jpg',
     linkText: 'View Specifications',
-    linkHref: '#',
+    linkHref: PRODUCT_CATEGORIES[3].href,
   },
   {
     title: 'Specialty Coffee',
@@ -53,14 +54,14 @@ const items: ExportItem[] = [
     description: 'Premium Indian coffee from South Indian estates, exported globally.',
     image: '/assets/coffee.jpg',
     linkText: 'View Specifications',
-    linkHref: '#',
+    linkHref: PRODUCT_CATEGORIES[4].href,
   },
   {
     title: 'Custom Sourcing',
     description: 'Your specific product requirements, our expert sourcing. Share your specs and we’ll handle the rest.',
     image: '',
     linkText: 'Submit Custom RFQ',
-    linkHref: '#',
+    linkHref: URLS.CONTACT,
     featured: true,
   }
 ];

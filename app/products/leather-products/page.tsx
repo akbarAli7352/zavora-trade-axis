@@ -1,3 +1,4 @@
+import { URLS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -123,7 +124,7 @@ export default function LeatherProductsPage() {
           </div>
 
           <Link
-            href="/contact"
+            href={URLS.CONTACT}
             className="mt-7 inline-flex items-center gap-2 bg-primary px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-primary-hover"
           >
             Request Quote for Leather Products

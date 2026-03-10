@@ -58,7 +58,7 @@ export default function PaymentTermsSection() {
               <span className="inline-block bg-primary text-white text-xs font-accent font-semibold tracking-widest uppercase px-3 py-1 mb-4">
                 {option.badge}
               </span>
-              <h3 className="font-heading font-bold text-xl text-[#0F172A] mb-3">
+              <h3 className="font-heading font-bold text-xl text-primary mb-3">
                 {option.title}
               </h3>
               <p className="text-sm text-slate-500 font-body leading-relaxed mb-5">

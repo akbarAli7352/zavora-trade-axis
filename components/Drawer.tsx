@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { links } from "@/constants";
+import { links, URLS } from "@/constants";
 
 interface DrawerProps {
   onClose: () => void;
@@ -67,7 +67,7 @@ export function Drawer({ onClose }: DrawerProps) {
 
         <div className="mt-auto">
           <Link
-            href="/submit-rfq"
+            href={URLS.CONTACT}
             className="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md
               bg-secondary text-primary hover:bg-secondary-hover"
             onClick={onClose}

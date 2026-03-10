@@ -41,7 +41,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href={URLS.CONTACT} className="text-white/60 hover:text-secondary">
+                <Link href={URLS.ABOUT} className="text-white/60 hover:text-secondary">
                   About Us
                 </Link>
               </li>

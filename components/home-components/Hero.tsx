@@ -1,3 +1,4 @@
+import { URLS } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -61,7 +62,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 md:mb-16">
-            <Link href={'/'} className="bg-secondary hover:bg-secondary-hover text-primary font-semibold px-8 py-3 md:px-10 md:py-4 transition-colors flex items-center gap-2">
+            <Link href={URLS.CONTACT} className="bg-secondary hover:bg-secondary-hover text-primary font-semibold px-8 py-3 md:px-10 md:py-4 transition-colors flex items-center gap-2">
               Submit RFQ
               <span className="text-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>

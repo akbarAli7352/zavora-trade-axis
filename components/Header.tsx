@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { NavBar } from "./NavBar";
 import { Drawer } from "./Drawer";
+import { URLS } from "@/constants";
 
 export function Header() {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -42,7 +43,7 @@ export function Header() {
             {/* rfq button on desktop */}
             <div className="hidden md:flex md:shrink-0">
                 <Link
-                    href="/submit-rfq"
+                    href={URLS.CONTACT}
                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium
                       bg-secondary text-primary hover:bg-secondary-hover"
                 >

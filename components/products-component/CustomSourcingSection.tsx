@@ -49,7 +49,7 @@ export default function CustomSourcingSection() {
 
           <Link
             href={URLS.CONTACT}
-            className="mt-8 inline-flex items-center gap-2 bg-secondary px-6 py-4 text-sm font-semibold text-primary transition-colors hover:bg-secondary-hover"
+            className="mt-8 inline-flex items-center gap-2 bg-secondary px-6 py-4 text-sm font-semibold text-primary-txt transition-colors hover:bg-secondary-hover"
           >
             Submit Custom Requirements
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -63,7 +63,7 @@ export default function CustomSourcingSection() {
           <ol className="mt-5 space-y-3">
             {steps.map((step, index) => (
               <li key={step} className="flex items-start gap-3 md:mb-6">
-                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center bg-secondary text-xs font-bold text-primary">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center bg-secondary text-xs font-bold text-primary-txt">
                   {index + 1}
                 </span>
                 <span className="text-white/75 text-sm font-body pt-0.5">{step}</span>

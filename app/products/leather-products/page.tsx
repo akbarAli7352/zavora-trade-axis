@@ -78,7 +78,7 @@ export default function LeatherProductsPage() {
           <p className="font-accent text-xs font-semibold tracking-[0.18em] uppercase text-secondary">
             Tannery-Sourced - Export Grade
           </p>
-          <h1 className="mt-2 font-heading text-4xl font-bold text-primary">
+          <h1 className="mt-2 font-heading text-4xl font-bold text-primary-txt">
             Leather Products
           </h1>
           <div className="mt-3 h-0.5 w-10 bg-secondary" />
@@ -106,7 +106,7 @@ export default function LeatherProductsPage() {
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-10">
         <div className="lg:col-span-2">
-          <h2 className="font-heading text-3xl font-bold text-primary">
+          <h2 className="font-heading text-3xl font-bold text-primary-txt">
             Product Specifications
           </h2>
           <div className="mt-3 h-px w-full bg-slate-200" />
@@ -117,7 +117,7 @@ export default function LeatherProductsPage() {
                 key={spec.label}
                 className="grid grid-cols-1 gap-2 bg-slate-100 px-4 py-3 sm:grid-cols-[170px_1fr] sm:gap-4"
               >
-                <p className="text-sm font-semibold text-primary">{spec.label}</p>
+                <p className="text-sm font-semibold text-primary-txt">{spec.label}</p>
                 <p className="text-sm text-slate-600">{spec.value}</p>
               </div>
             ))}
@@ -133,7 +133,7 @@ export default function LeatherProductsPage() {
         </div>
 
         <div>
-          <h2 className="font-heading text-3xl font-bold text-primary">
+          <h2 className="font-heading text-3xl font-bold text-primary-txt">
             Trade Details
           </h2>
           <div className="mt-3 h-px w-full bg-slate-200" />

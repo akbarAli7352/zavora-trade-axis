@@ -21,7 +21,7 @@ export default function TextareaInputField({
     <div>
       <label
         htmlFor={id}
-        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary font-semibold"
+        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary-txt font-semibold"
       >
         {label} {required && '*'}
       </label>
@@ -32,7 +32,7 @@ export default function TextareaInputField({
         rows={rows}
         placeholder={placeholder}
         aria-invalid={Boolean(error)}
-        className={`w-full border bg-white px-3 py-3 text-sm text-primary placeholder:text-slate-400 outline-none focus:border-primary resize-y min-h-[120px] ${
+        className={`w-full border bg-white px-3 py-3 text-sm text-primary-txt placeholder:text-slate-400 outline-none focus:border-primary resize-y min-h-[120px] ${
           error ? 'border-red-500' : 'border-slate-300'
         }`}
       />

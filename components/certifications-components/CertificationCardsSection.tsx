@@ -87,7 +87,7 @@ export default function CertificationCardsSection() {
                   </div>
 
                   <div className="min-w-0 flex-1">
-                    <h2 className="font-heading font-bold text-base text-primary">
+                    <h2 className="font-heading font-bold text-base text-primary-txt">
                       {item.title}
                     </h2>
                     <p className="text-xs text-slate-500 font-body">{item.authority}</p>

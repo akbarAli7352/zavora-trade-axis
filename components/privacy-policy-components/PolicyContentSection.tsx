@@ -69,8 +69,8 @@ export default function PolicyContentSection() {
         <div className="space-y-8">
           {policySections.map((section) => (
             <article key={section.id} className="space-y-4">
-              <h2 className="font-heading text-lg font-semibold text-primary sm:text-xl">
-                <span className="mr-2 text-primary">{section.id}</span>
+              <h2 className="font-heading text-lg font-semibold text-primary-txt sm:text-xl">
+                <span className="mr-2 text-primary-txt">{section.id}</span>
                 {section.title}
               </h2>
               <p className="max-w-4xl text-sm leading-relaxed text-slate-600">
@@ -96,7 +96,7 @@ export default function PolicyContentSection() {
         <div className="mt-10 border-t border-slate-200 pt-5">
           <Link
             href={URLS.CONTACT}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-secondary"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary-txt transition hover:text-secondary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

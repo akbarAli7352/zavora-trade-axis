@@ -26,7 +26,7 @@ export default function SelectInputField({
     <div>
       <label
         htmlFor={id}
-        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary font-semibold"
+        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary-txt font-semibold"
       >
         {label} {required && '*'}
       </label>
@@ -36,7 +36,7 @@ export default function SelectInputField({
         required={required}
         defaultValue=""
         aria-invalid={Boolean(error)}
-        className={`w-full h-11 border bg-white px-3 text-sm text-primary outline-none focus:border-primary ${
+        className={`w-full h-11 border bg-white px-3 text-sm text-primary-txt outline-none focus:border-primary ${
           error ? 'border-red-500' : 'border-slate-300'
         }`}
       >

@@ -59,7 +59,7 @@ export default function CompanyOverview() {
               key={stat.label}
               className={`flex min-h-36 flex-col justify-center border px-7 py-6 sm:min-h-44 ${stat.highlighted
                   ? "border-primary bg-primary text-white"
-                  : "border-slate-300 bg-transparent text-primary"
+                  : "border-slate-300 bg-transparent text-primary-txt"
                 }`}
             >
               <p

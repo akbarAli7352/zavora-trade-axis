@@ -25,7 +25,7 @@ export default function ThirdPartyInspectionSection() {
           <p className="font-accent text-xs font-semibold tracking-[0.16em] uppercase text-secondary">
             Independent Verification
           </p>
-          <h2 className="mt-2 font-heading text-5xl font-bold text-primary">
+          <h2 className="mt-2 font-heading text-5xl font-bold text-primary-txt">
             Third-Party Inspection
           </h2>
           <p className="mt-3 text-base leading-relaxed text-slate-600">
@@ -51,7 +51,7 @@ export default function ThirdPartyInspectionSection() {
                 <path d="m8.5 13.5-1.5 7 5-2.2 5 2.2-1.5-7" />
               </svg>
 
-              <h3 className="mt-3 font-heading text-2xl font-bold text-primary">
+              <h3 className="mt-3 font-heading text-2xl font-bold text-primary-txt">
                 {agency.name}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-slate-600">
@@ -62,7 +62,7 @@ export default function ThirdPartyInspectionSection() {
         </div>
 
         <div className="mt-6 border-l-4 border-primary bg-white px-5 py-4 text-sm leading-relaxed text-slate-600">
-          <span className="font-semibold text-primary">Note:</span> Buyers are
+          <span className="font-semibold text-primary-txt">Note:</span> Buyers are
           encouraged to nominate their preferred inspection agency. We will
           coordinate access, product presentation, and inspection logistics at
           no additional fee for standard orders.

@@ -44,7 +44,7 @@ function Bullet({ text, secondary = false }: { text: string; secondary?: boolean
   return (
     <li className="flex items-start gap-2 text-sm leading-relaxed text-slate-600">
       {secondary ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-secondary mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>:
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-primary mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>}
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-primary-txt mt-0.5 shrink-0" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>}
       <span>{text}</span>
     </li>
   );
@@ -59,7 +59,7 @@ export default function HowWeOperateSection() {
             <p className="font-accent text-xs font-semibold tracking-widest text-secondary uppercase">
               Our Principles
             </p>
-            <h2 className="mb-4 font-heading text-4xl font-bold text-primary mt-2">
+            <h2 className="mb-4 font-heading text-4xl font-bold text-primary-txt mt-2">
               How We Operate
             </h2>
           </div>
@@ -70,8 +70,8 @@ export default function HowWeOperateSection() {
                 key={card.title}
                 className="border border-slate-300 bg-white px-6 py-7 hover:border-secondary"
               >
-                <div className="text-primary">{card.icon}</div>
-                <h3 className="font-heading font-bold text-base text-primary mb-3 mt-4">
+                <div className="text-primary-txt">{card.icon}</div>
+                <h3 className="font-heading font-bold text-base text-primary-txt mb-3 mt-4">
                   {card.title}
                 </h3>
                 <p className="text-sm text-slate-500 font-body leading-relaxed">
@@ -86,7 +86,7 @@ export default function HowWeOperateSection() {
       <div className="bg-white">
         <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:gap-14 lg:px-16 lg:py-16">
           <article className="border-l-4 border-secondary pl-6">
-            <h3 className="font-heading text-4xl font-bold text-primary">
+            <h3 className="font-heading text-4xl font-bold text-primary-txt">
               Ethical Sourcing Commitment
             </h3>
             <p className="mt-4 font-body text-sm leading-relaxed text-slate-600">
@@ -102,7 +102,7 @@ export default function HowWeOperateSection() {
           </article>
 
           <article className="border-l-4 border-primary pl-6">
-            <h3 className="font-heading text-4xl font-bold text-primary">
+            <h3 className="font-heading text-4xl font-bold text-primary-txt">
               Compliance Framework
             </h3>
             <p className="mt-4 font-body text-sm leading-relaxed text-slate-600">

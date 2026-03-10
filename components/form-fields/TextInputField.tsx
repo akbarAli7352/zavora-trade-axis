@@ -21,7 +21,7 @@ export default function TextInputField({
     <div>
       <label
         htmlFor={id}
-        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary font-semibold"
+        className="block mb-2 font-accent text-[11px] tracking-widest uppercase text-primary-txt font-semibold"
       >
         {label} {required && '*'}
       </label>
@@ -32,7 +32,7 @@ export default function TextInputField({
         required={required}
         placeholder={placeholder}
         aria-invalid={Boolean(error)}
-        className={`w-full h-11 border bg-white px-3 text-sm text-primary placeholder:text-slate-400 outline-none focus:border-primary ${
+        className={`w-full h-11 border bg-white px-3 text-sm text-primary-txt placeholder:text-slate-400 outline-none focus:border-primary ${
           error ? 'border-red-500' : 'border-slate-300'
         }`}
       />

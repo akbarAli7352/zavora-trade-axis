@@ -109,7 +109,7 @@ export default function ExportSection() {
                 <div className="mt-4">
                   <Link
                     href={item.linkHref || '#'}
-                    className="text-primary font-semibold text-sm inline-flex items-center gap-1 group-hover:text-secondary transition-colors"
+                    className="text-primary-txt font-semibold text-sm inline-flex items-center gap-1 group-hover:text-secondary transition-colors"
                   >
                     {item.linkText}
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>

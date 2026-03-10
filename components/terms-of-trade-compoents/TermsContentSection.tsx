@@ -31,7 +31,7 @@ export default function TermsContentSection() {
       <div className="mx-auto w-full max-w-5xl px-6 py-10 sm:px-10 lg:px-16 lg:py-12">
         <div className="space-y-8">
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               1. General Terms
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -44,7 +44,7 @@ export default function TermsContentSection() {
 
           <article className="space-y-4">
             <div className="space-y-2">
-              <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+              <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
                 2. Payment Terms
               </h2>
               <p className="text-sm leading-relaxed text-slate-600">
@@ -59,7 +59,7 @@ export default function TermsContentSection() {
                   key={option.title}
                   className={`border border-slate-200 bg-slate-50/70 p-4 sm:p-5 ${option.accent} border-l-4`}
                 >
-                  <h3 className="font-heading text-base font-semibold text-primary sm:text-lg">
+                  <h3 className="font-heading text-base font-semibold text-primary-txt sm:text-lg">
                     {option.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-600">
@@ -76,7 +76,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               3. Pricing &amp; Quotations
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -89,7 +89,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               4. Quality &amp; Inspection
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -102,7 +102,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               5. Delivery &amp; Shipment
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -115,7 +115,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               6. Documentation
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -135,7 +135,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               7. Disputes &amp; Governing Law
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -147,7 +147,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               8. Anti-Corruption
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -160,7 +160,7 @@ export default function TermsContentSection() {
           </article>
 
           <article className="space-y-4">
-            <h2 className="font-heading text-xl font-semibold text-primary sm:text-2xl">
+            <h2 className="font-heading text-xl font-semibold text-primary-txt sm:text-2xl">
               9. Contact for Trade Queries
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
@@ -172,7 +172,7 @@ export default function TermsContentSection() {
         <div className="mt-10 border-t border-slate-200 pt-5">
           <Link
             href={URLS.CONTACT}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-secondary"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary-txt transition hover:text-secondary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

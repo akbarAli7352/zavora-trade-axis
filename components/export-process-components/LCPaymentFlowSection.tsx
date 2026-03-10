@@ -35,7 +35,7 @@ export default function LCPaymentFlowSection() {
           <p className="font-accent font-semibold text-xs tracking-widest uppercase text-secondary">
             Payment Security
           </p>
-          <h2 className="font-heading text-4xl font-bold text-primary mt-2">
+          <h2 className="font-heading text-4xl font-bold text-primary-txt mt-2">
             LC Payment Flow
           </h2>
           <p className="text-slate-500 text-sm mt-4 font-body max-w-lg mx-auto">
@@ -61,7 +61,7 @@ export default function LCPaymentFlowSection() {
                 />
               ) : null}
 
-              <h3 className="mt-3 font-heading text-base font-semibold text-primary">
+              <h3 className="mt-3 font-heading text-base font-semibold text-primary-txt">
                 {step.title}
               </h3>
               <p className="text-xs text-slate-500 font-body leading-relaxed">

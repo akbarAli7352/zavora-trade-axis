@@ -69,7 +69,7 @@ export function Drawer({ onClose }: DrawerProps) {
           <Link
             href={URLS.CONTACT}
             className="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md
-              bg-secondary text-primary hover:bg-secondary-hover"
+              bg-secondary text-primary-txt hover:bg-secondary-hover"
             onClick={onClose}
           >
             Submit RFQ

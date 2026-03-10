@@ -32,8 +32,8 @@ export default function ProductTabsNav() {
                   href={category.href}
                   className={`inline-flex whitespace-nowrap border-b-2 px-2 pt-5 pb-3 text-sm md:text-base font-semibold transition-colors ${
                     active
-                      ? "border-secondary text-primary"
-                      : "border-transparent text-slate-500 hover:text-primary"
+                      ? "border-secondary text-primary-txt"
+                      : "border-transparent text-slate-500 hover:text-primary-txt"
                   }`}
                 >
                   {category.name}

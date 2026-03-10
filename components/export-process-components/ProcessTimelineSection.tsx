@@ -98,7 +98,7 @@ export default function ProcessTimelineSection() {
               </div>
 
               <div className="p-5 sm:p-6">
-                <h2 className="flex font-heading font-bold text-xl text-primary">
+                <h2 className="flex font-heading font-bold text-xl text-primary-txt">
                   <span className="text-secondary mr-2 md:mr-4" aria-hidden="true">
                     {step.icon}
                   </span>
@@ -110,7 +110,7 @@ export default function ProcessTimelineSection() {
 
                 <div className="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2">
                   <div>
-                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary mb-3">
+                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary-txt mb-3">
                       Activities
                     </p>
                     <ul className="mt-2 space-y-1.5">
@@ -127,7 +127,7 @@ export default function ProcessTimelineSection() {
                   </div>
 
                   <div>
-                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary mb-3">
+                    <p className="text-xs font-accent font-semibold tracking-widest uppercase text-primary-txt mb-3">
                       Documents Involved
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">

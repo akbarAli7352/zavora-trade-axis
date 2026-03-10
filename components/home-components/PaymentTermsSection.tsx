@@ -40,7 +40,7 @@ export default function PaymentTermsSection() {
           <p className="mb-2 font-accent font-semibold text-xs tracking-widest uppercase text-secondary">
             Payment Security
           </p>
-          <h2 className="text-primary font-heading text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-primary-txt font-heading text-3xl md:text-4xl font-bold leading-tight">
             Transparent Payment Terms
           </h2>
           <p className="text-slate-500 text-sm mt-4 max-w-lg mx-auto font-body">
@@ -58,7 +58,7 @@ export default function PaymentTermsSection() {
               <span className="inline-block bg-primary text-white text-xs font-accent font-semibold tracking-widest uppercase px-3 py-1 mb-4">
                 {option.badge}
               </span>
-              <h3 className="font-heading font-bold text-xl text-primary mb-3">
+              <h3 className="font-heading font-bold text-xl text-primary-txt mb-3">
                 {option.title}
               </h3>
               <p className="text-sm text-slate-500 font-body leading-relaxed mb-5">

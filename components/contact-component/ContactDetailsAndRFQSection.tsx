@@ -89,7 +89,7 @@ export default function ContactDetailsAndRFQSection() {
     <section className="bg-[#f5f7fa]">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 px-6 py-10 sm:px-10 lg:grid-cols-[360px_1fr] lg:gap-9 lg:px-16 lg:py-14">
         <div>
-          <h2 className="font-heading text-4xl font-bold text-primary">
+          <h2 className="font-heading text-4xl font-bold text-primary-txt">
             Contact Information
           </h2>
           <div className="mt-3 h-0.5 w-10 bg-secondary" />
@@ -97,7 +97,7 @@ export default function ContactDetailsAndRFQSection() {
           <div className="mt-6 space-y-5">
             {contactItems.map((item) => (
               <div key={item.label} className="flex items-start gap-3">
-                <div className="inline-flex h-8 w-8 items-center justify-center border border-slate-300 text-primary">
+                <div className="inline-flex h-8 w-8 items-center justify-center border border-slate-300 text-primary-txt">
                   {item.icon}
                 </div>
                 <div>
@@ -132,7 +132,7 @@ export default function ContactDetailsAndRFQSection() {
           </Link>
 
           <div className="bg-[#F8FAFC] border border-slate-200 p-5 mt-8">
-            <h3 className="font-heading font-bold text-sm text-primary mb-3">
+            <h3 className="font-heading font-bold text-sm text-primary-txt mb-3">
               Confidentiality Assured
             </h3>
             <ul className="mt-3 space-y-2">
@@ -147,7 +147,7 @@ export default function ContactDetailsAndRFQSection() {
         </div>
 
         <div>
-          <h2 className="font-heading text-4xl font-bold text-primary">
+          <h2 className="font-heading text-4xl font-bold text-primary-txt">
             Request for Quotation (RFQ)
           </h2>
            <div className="mt-3 h-0.5 w-10 bg-secondary" />

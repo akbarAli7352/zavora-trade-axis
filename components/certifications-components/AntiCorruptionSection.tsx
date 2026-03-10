@@ -21,7 +21,7 @@ export default function AntiCorruptionSection() {
           <p className="font-accent text-xs font-semibold tracking-[0.16em] uppercase text-secondary">
             Ethics Statement
           </p>
-          <h2 className="mt-2 font-heading text-4xl font-bold text-primary">
+          <h2 className="mt-2 font-heading text-4xl font-bold text-primary-txt">
             Anti-Corruption Commitment
           </h2>
         </div>
@@ -30,7 +30,7 @@ export default function AntiCorruptionSection() {
           {commitments.map((item) => (
             <article key={item.title} className="border border-slate-300 bg-white p-5 sm:p-6 hover:border-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-check-big text-[#D4AF37] mb-4" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-              <h3 className="mt-3 font-heading text-2xl font-bold text-primary">
+              <h3 className="mt-3 font-heading text-2xl font-bold text-primary-txt">
                 {item.title}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-slate-600">{item.desc}</p>

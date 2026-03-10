@@ -101,7 +101,7 @@ export default function ExportSection() {
                   {item.subtitle && (
                     <p className="font-accent text-sm text-secondary mb-2 font-[auto]">{item.subtitle}</p>
                   )}
-                  <h3 className={`text-lg font-semibold mb-1 font-[auto] ${item.featured ? 'group-hover:text-white' : ''}`}>{item.title}</h3>
+                  <h3 className={`text-lg font-semibold mb-1 font-[auto] text-primary-txt ${item.featured ? 'group-hover:text-white' : ''}`}>{item.title}</h3>
                   <p className={`text-sm text-slate-500 font-body leading-relaxed mb-4 ${item.featured ? 'group-hover:text-gray-300' : ''}`}>
                     {item.description}
                   </p>

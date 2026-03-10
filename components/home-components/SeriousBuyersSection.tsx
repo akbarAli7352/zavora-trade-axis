@@ -62,7 +62,7 @@ export default function SeriousBuyersSection() {
               className="flex flex-col border-l-4 border-secondary bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="mb-4 text-secondary">{f.icon}</div>
-              <h4 className="font-semibold text-lg mb-2">{f.title}</h4>
+              <h4 className="font-semibold text-lg mb-2 text-primary-txt">{f.title}</h4>
               <p className="text-sm text-gray-600 leading-relaxed">{f.description}</p>
             </div>
           ))}

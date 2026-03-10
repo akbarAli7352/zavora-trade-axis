@@ -6,6 +6,7 @@
   --primary-txt: #0F172A;
   --primary: rgb(27 45 107);
   --primary-hover: rgb(27 45 107 / 0.8);
+  --primary-deep: #0B1120;
   --secondary: rgb(212 175 55);
   --secondary-hover: rgb(212 175 55 / 0.8);
   scroll-behavior: smooth;
@@ -17,6 +18,7 @@
   --color-primary: var(--primary);
   --color-primary-txt: var(--primary-txt);
   --color-primary-hover: var(--primary-hover);
+  --color-primary-deep: var(--primary-deep);
   --color-secondary: var(--secondary);
   --color-secondary-hover: var(--secondary-hover);
   --font-sans: var(--font-geist-sans);

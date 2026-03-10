@@ -107,7 +107,7 @@ export default function MarketMapSection({ highlight = [] }: MarketMapSectionPro
   }, [svgContent]);
 
   return (
-    <section className="py-24 px-4 md:px-20 bg-[#0B1120] text-white">
+    <section className="py-24 px-4 md:px-20 bg-primary-deep text-white">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center lg:space-x-16">
         {/* text panel */}
         <div className="lg:w-2/5">

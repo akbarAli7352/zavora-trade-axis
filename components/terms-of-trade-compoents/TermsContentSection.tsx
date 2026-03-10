@@ -12,7 +12,7 @@ const paymentOptions = [
     title: "Advance Payment",
     description:
       "30–50% advance before production commencement. Remaining balance to be transferred prior to shipment. Wire transfer (TT) via SWIFT banking network only.",
-    accent: "border-l-[#1B2D6B]",
+    accent: "border-l-primary",
   },
 ];
 

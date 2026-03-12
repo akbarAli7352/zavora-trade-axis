@@ -44,10 +44,10 @@ export default function ProcessSection() {
         <p className="text-secondary font-accent text-xs tracking-widest uppercase mb-2">
           Our Process
         </p>
-        <h2 className="text-primary-txt font-bold text-2xl md:text-3xl leading-tight mb-4">
+        <h2 className="text-primary-txt font-bold text-4xl md:text-5xl leading-tight mb-4">
           From Inquiry to Delivery
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-slate-500 text-base mt-4 max-w-xl mx-auto font-body mb-12">
           A structured, transparent process with clear milestones and documentation at every stage.
         </p>
       </div>

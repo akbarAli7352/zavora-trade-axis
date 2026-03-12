@@ -29,39 +29,40 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full px-4 py-12 md:py-0">
-        <div className="max-w-4xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto py-0">
+        <div className="max-w-3xl text-left px-8">
           {/* Header Label */}
-          <div className="text-center mb-8">
-            <p className="md:mt-8 text-secondary font-semibold text-sm md:text-base tracking-widest uppercase">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-px w-10 bg-secondary mt-1"></div>
+            <p className="mt-1 text-secondary font-semibold text-sm tracking-widest uppercase">
               {`INDIA'S PREMIER MERCHANT EXPORTER`}
             </p>
           </div>
 
           {/* Main Heading */}
-          <div className="text-center mb-6 md:mb-8">
+          <div className="mb-6 md:mb-8">
             <h1 className="text-white mb-4">
-              <span className="block text-4xl md:text-6xl font-bold mb-2">
+              <span className="block text-5xl md:text-7xl font-bold mb-2">
                 Structured Trade.
               </span>
-              <span className="block text-4xl md:text-6xl font-bold text-secondary mb-2">
+              <span className="block text-5xl md:text-7xl font-bold text-secondary mb-2">
                 Verified Quality.
               </span>
-              <span className="block text-4xl md:text-6xl font-bold">
+              <span className="block text-4xl md:text-7xl font-bold">
                 Reliable Execution.
               </span>
             </h1>
           </div>
 
           {/* Description */}
-          <div className="text-center mb-8 md:mb-12">
-            <p className="text-gray-200 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          <div className="mb-4 md:mb-6">
+            <p className="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl">
               {`Zavora TradeAxis connects international buyers with India's finest verified suppliers — leather goods, handicrafts, carpets, honey, and coffee — with full compliance, documented process, and payment security built in.`}
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start items-start mb-12 md:mb-16">
             <Link href={URLS.CONTACT} className="bg-secondary hover:bg-secondary-hover text-primary-txt font-semibold px-8 py-3 md:px-10 md:py-4 transition-colors flex items-center gap-2">
               Submit RFQ
               <span className="text-lg">
@@ -75,7 +76,7 @@ export default function Hero() {
           </div>
 
           {/* Certifications */}
-          <div className="text-center border-t border-gray-400 pt-6 md:p-8">
+          <div className="pb-12">
             <p className="text-gray-400 text-xs tracking-wider uppercase">
               <span className="inline-block mr-3 md:mr-6">IEC REGISTERED</span>
               <span className="inline-block mr-3 md:mr-6">GST COMPLIANT</span>

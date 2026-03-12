@@ -17,7 +17,7 @@ export function NavBar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`inline-flex px-3 pb-2 items-center border-b-2 text-sm
+              className={`inline-flex px-3 pb-2 items-center border-b-2 text-base
                 ${isActive ? "border-secondary text-secondary" : "text-white border-transparent hover:text-secondary"}`}
             >
               {link.label}

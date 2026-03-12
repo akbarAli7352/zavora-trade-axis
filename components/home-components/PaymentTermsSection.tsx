@@ -40,10 +40,10 @@ export default function PaymentTermsSection() {
           <p className="mb-2 font-accent font-semibold text-xs tracking-widest uppercase text-secondary">
             Payment Security
           </p>
-          <h2 className="text-primary-txt font-heading text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-primary-txt font-heading text-4xl md:text-5xl font-bold leading-tight">
             Transparent Payment Terms
           </h2>
-          <p className="text-slate-500 text-sm mt-4 max-w-lg mx-auto font-body">
+          <p className="text-slate-500 text-base mt-4 max-w-lg mx-auto font-body">
             We operate exclusively on secure, bank-backed payment mechanisms.
             No credit terms. No ambiguity.
           </p>

@@ -11,7 +11,7 @@ export default function RFQSection() {
           <h2 className="text-primary-txt font-heading text-4xl md:text-5xl font-bold leading-tight">
             Submit a Request for Quotation
           </h2>
-          <p className="text-slate-500 text-sm mt-4 font-body max-w-lg mx-auto">
+          <p className="text-slate-500 text-base mt-4 font-body max-w-lg mx-auto">
             Complete the form below with your requirements. Our trade team will respond within 24 business hours.
           </p>
         </div>

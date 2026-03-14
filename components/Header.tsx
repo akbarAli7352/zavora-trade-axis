@@ -11,13 +11,13 @@ export function Header() {
 
     return (
         <header className="z-50 sticky top-0 flex items-center justify-between bg-primary text-foreground p-2 sm:pl-10 sm:pr-10 sm:p-4">
-            <Link href={URLS.HOME} className="flex">
+            <Link href={URLS.HOME} className="flex items-center">
                 <Image
                     src="/zavora_logo.jpeg"
                     alt="Zavora Trade Axis Logo"
-                    width={40}
-                    height={40}
-                    className="inline-block mr-2 w-8 h-8 sm:w-10 sm:h-10"
+                    width={48}
+                    height={48}
+                    className="mr-2"
                 />
                 <div>
                     <div className="text-white font-heading font-bold text-lg leading-tight tracking-tight" style={{ fontFamily: 'Playfair Display,serif' }}>Zavora TradeAxis</div>

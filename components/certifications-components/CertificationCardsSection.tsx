@@ -80,14 +80,17 @@ export default function CertificationCardsSection() {
             const isActive = item.status === "ACTIVE";
 
             return (
-              <article key={item.code} className="border border-slate-300 bg-slate-50 p-5 sm:p-6 hover:border-secondary">
+              <article
+                key={item.code}
+                className="border border-slate-300 bg-slate-50 p-5 transition-all duration-300 ease-out sm:p-6 hover:-translate-y-1 hover:border-secondary hover:shadow-lg"
+              >
                 <div className="flex flex-wrap items-start gap-3">
                   <div className="w-14 h-14 bg-primary text-secondary flex items-center justify-center">
                     {item.code}
                   </div>
 
                   <div className="min-w-0 flex-1">
-                    <h2 className="font-heading font-bold text-base text-primary-txt">
+                    <h2 className="font-heading font-bold text-lg text-primary-txt">
                       {item.title}
                     </h2>
                     <p className="text-xs text-slate-500 font-body">{item.authority}</p>

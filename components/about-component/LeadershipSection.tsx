@@ -3,41 +3,22 @@ const leadershipMembers = [
     role: "CEO",
     name: "Abdul Noor",
     initials: "AN",
-    responsibilities: [
-      "Runs the company",
-      "Reports to the members",
-      "Single point of accountability",
-    ],
   },
   {
     role: "Non Executive Director",
     name: "Mohd. Shahnawaz",
     initials: "MS",
-    responsibilities: ["Strategy", "Agreements", "Policies", "Sales"],
   },
   {
     role: "COO / HR",
     name: "Md. Minhaj",
     initials: "MM",
-    responsibilities: [
-      "Logistics",
-      "Shipping",
-      "Custom clearance",
-      "Warehousing",
-      "Hiring",
-    ],
-  },
-  {
-    role: "CFO",
-    name: "",
-    initials: "CF",
-    responsibilities: ["Accounting", "GST", "Payment", "Banking and LCs"],
+
   },
   {
     role: "CBO / Sales and Purchase",
     name: "Furqan",
     initials: "FU",
-    responsibilities: ["Clients", "Pricing", "Market expansion"],
   },
 ];
 
@@ -54,11 +35,11 @@ export default function LeadershipSection() {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 lg:justify-items-center">
           {leadershipMembers.map((member) => (
             <article
               key={`${member.role}-${member.name}`}
-              className="w-full max-w-sm border border-slate-300 bg-white px-6 py-6 lg:max-w-none hover:border-secondary"
+              className="w-full border border-slate-300 bg-white px-6 py-6 sm:max-w-sm lg:max-w-md hover:border-secondary"
             >
               <div className="font-[auto] w-14 h-14 bg-primary text-secondary flex items-center justify-center mb-4">
                 {member.initials}
@@ -70,18 +51,6 @@ export default function LeadershipSection() {
               <p className="text-xs font-accent font-semibold tracking-wide text-secondary uppercase mb-3">
                 {member.name ? member.role : "Chief Financial Officer"}
               </p>
-
-              <ul className="mt-4 space-y-2">
-                {member.responsibilities.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2 font-body text-sm leading-relaxed text-slate-500"
-                  >
-                    <span className="mt-1.75 inline-block h-1.5 w-1.5 rounded-full bg-slate-500" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </article>
           ))}
         </div>

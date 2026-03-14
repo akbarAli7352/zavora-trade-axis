@@ -81,14 +81,14 @@ const processSteps = [
 export default function ProcessTimelineSection() {
   return (
     <section className="bg-[#F5F7FA]">
-      <div className="mx-auto w-full max-w-7xl px-6 py-10 sm:px-10 lg:px-16 lg:py-14">
+      <div className="mx-auto w-full max-w-7xl px-6 py-10 sm:px-10 lg:px-32 lg:py-14">
         <div className="space-y-6">
           {processSteps.map((step) => (
             <article
               key={step.id}
-              className="grid grid-cols-1 border border-slate-300 bg-white lg:grid-cols-[128px_1fr] hover:border-secondary"
+              className="group grid grid-cols-1 border border-slate-300 bg-white transition-colors lg:grid-cols-[167px_1fr] hover:border-secondary"
             >
-              <div className="flex min-h-28 flex-col items-center justify-center bg-primary px-4 py-6 text-center text-white lg:min-h-full">
+              <div className="flex min-h-28 flex-col items-center justify-center bg-primary px-4 py-6 text-center text-white transition-colors group-hover:bg-secondary lg:min-h-full">
                 <p className="font-heading text-4xl font-bold leading-none text-white/45">
                   {step.id}
                 </p>

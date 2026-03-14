@@ -70,7 +70,7 @@ export default function ExportSection() {
   return (
     <section className="w-full bg-white py-12 md:px-8">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="mb-2 font-accent font-semibold text-xs tracking-widest uppercase text-secondary">Core Export Products</h3>
+        <h3 className="mb-2 font-accent text-center md:text-left font-semibold text-xs tracking-widest uppercase text-secondary">Core Export Products</h3>
         <SectionTitle title="What We Export" className="text-center md:text-justify mb-8 font-[auto]" />
         <p className="text-gray-600 text-center md:text-justify max-w-2xl mx-auto md:mx-0 mb-12">
           Five carefully curated product categories, each with verified supplier networks and documented quality standards.

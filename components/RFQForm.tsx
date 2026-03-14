@@ -123,7 +123,7 @@ export default function RFQForm({ className = '' }: RFQFormProps) {
         <button
           type="submit"
           disabled={isPending}
-          className={`bg-primary text-white px-7 h-11 text-sm font-semibold hover:bg-primary-hover transition-colors ${
+          className={`cursor-pointer inline-flex items-center justify-center w-full sm:w-auto min-w-[260px] bg-primary text-white px-7 h-11 text-sm font-semibold hover:bg-primary-hover transition-colors ${
             isPending ? 'opacity-60 cursor-not-allowed' : ''
           }`}
         >
@@ -134,7 +134,22 @@ export default function RFQForm({ className = '' }: RFQFormProps) {
         </p>
       </div>
       {state.message ? (
-        <p className={`mt-3 text-sm ${state.success ? 'text-green-700' : 'text-red-600'}`}>{state.message}</p>
+        <div
+          role="status"
+          className={`mt-4 flex gap-3 border px-4 py-3 text-sm items-center ${
+            state.success
+              ? 'border-emerald-200 bg-emerald-50 text-emerald-800'
+              : 'border-rose-200 bg-rose-50 text-rose-700'
+          }`}
+        >
+          <span
+            className={`mt-0.5 inline-flex h-2.5 w-2.5 rounded-full ${
+              state.success ? 'bg-emerald-500' : 'bg-rose-500'
+            }`}
+            aria-hidden="true"
+          ></span>
+          <p className="font-body">{state.message}</p>
+        </div>
       ) : null}
     </form>
   );

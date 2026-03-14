@@ -48,7 +48,7 @@ export default function SeriousBuyersSection() {
   return (
     <section className="w-full py-12 md:px-8">
       <div className="max-w-7xl mx-auto px-4">
-        <p className="mb-2 font-accent font-semibold text-xs tracking-widest uppercase text-secondary">
+        <p className="mb-2 font-accent text-center md:text-left font-semibold text-xs tracking-widest uppercase text-secondary">
           Why Zavora Tradeaxis
         </p>
         <SectionTitle

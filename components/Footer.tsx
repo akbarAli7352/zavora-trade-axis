@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <Link href={URLS.HOME} className="flex items-center mb-4">
               <Image
-                src="/logo.png"
+                src="/zavora_logo.jpeg"
                 width={48}
                 height={48}
                 alt="Zavora Trade Axis Logo"
